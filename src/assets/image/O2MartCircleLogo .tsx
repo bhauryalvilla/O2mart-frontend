@@ -1,4 +1,4 @@
-import React, { type SVGProps } from "react";
+import { type SVGProps } from "react";
 
 interface O2MartCircleLogoProps extends SVGProps<SVGSVGElement> {
   className?: string;

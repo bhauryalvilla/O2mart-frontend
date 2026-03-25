@@ -1,4 +1,4 @@
-import React from "react";
+
 // import { MapPinIcon, PhoneIcon, EnvelopeIcon, ShoppingCartIcon } from "./icons"; // Your icons or Heroicons
 
 const Footer = () => {

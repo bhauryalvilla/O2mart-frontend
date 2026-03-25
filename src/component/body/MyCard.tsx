@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 
 interface MyCardProp {
   cardStatue: string;

@@ -26,7 +26,7 @@ const ProductOptions: React.FC<ProductOptionsProps> = ({
         const backendCategory =
           (categoryMap[productName ?? ""] || productName) ?? "";
 
-        const response =
+        const response: any =
           await allPlantsApi.getPlantsByCategory(backendCategory);
         // ✅ Transform: Full image URLs (same as brands)
         const plantsWithFullUrls = response?.data.map((plant: PlantCard) => ({

@@ -4,7 +4,7 @@ import { promoSliderApi, type PromoSlide } from "../../api/promoSliderAPI";
 const PromoSlider = () => {
   const [slides, setSlides] = useState<PromoSlide[]>([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [autoPlay] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
   const [loading, setLoading] = useState(true);
 

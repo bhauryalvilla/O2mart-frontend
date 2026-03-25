@@ -93,7 +93,7 @@ const BrandOffersGrid = () => {
     fetchBrands();
   }, []);
 
-  // console.log("selectedBrand", selectedBrand);
+  console.log("Loading", loading);
 
   results.map((result) => {
     console.log("Results", result.name);
