@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const apiClient = axios.create({
-  baseURL: "https://o2mart-backend.vercel.app/api",
+  baseURL: import.meta.env.DEV ? "http://localhost:5000/api" : "https://o2mart-backend.vercel.app/api",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
