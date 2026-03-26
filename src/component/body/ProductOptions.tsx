@@ -31,7 +31,7 @@ const ProductOptions: React.FC<ProductOptionsProps> = ({
         // ✅ Transform: Full image URLs (same as brands)
         const plantsWithFullUrls = response?.data.map((plant: PlantCard) => ({
           ...plant,
-          image: `https://o2mart-backend.vercel.app/uploads${plant.image}`,
+          image: `http://localhost:5000${plant.image}`,
         }));
         setPlants(plantsWithFullUrls);
         setVisibleCount(4);

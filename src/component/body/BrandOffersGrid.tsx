@@ -81,7 +81,7 @@ const BrandOffersGrid = () => {
         // Transform: Add full image URLs
         const brandsWithFullUrls = response.data.map((brand) => ({
           ...brand,
-          image: `https://o2mart-backend.vercel.app/uploads${brand.image}`, // Backend URL
+          image: `http://localhost:5000${brand.image}`, // Backend URL
         }));
         setCards(brandsWithFullUrls as BrandCard[]);
       } catch (error) {

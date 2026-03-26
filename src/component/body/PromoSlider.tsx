@@ -4,7 +4,7 @@ import { promoSliderApi, type PromoSlide } from "../../api/promoSliderAPI";
 const PromoSlider = () => {
   const [slides, setSlides] = useState<PromoSlide[]>([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [autoPlay] = useState(true);
+  const [autoPlay, setAutoPlay] = useState(true);
   const [isHovered, setIsHovered] = useState(false);
   const [loading, setLoading] = useState(true);
 
@@ -55,7 +55,7 @@ const PromoSlider = () => {
       {/* Slide */}
       <div className="relative w-full h-64 md:h-80 lg:h-96">
         <img
-          src={`https://o2mart-backend.vercel.app/uploads${slide.image}`}
+          src={`http://localhost:5000${slide.image}`}
           alt={slide.title}
           className="w-full h-full object-cover rounded-xl shadow-2xl"
         />
